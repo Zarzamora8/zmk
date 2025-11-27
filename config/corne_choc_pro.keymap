@@ -23,7 +23,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <22 7 21 34 43 44 45 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 44 45 8>;
-            hold-trigger-on-release;
         };
 
         hmr: hmr {
@@ -34,7 +33,7 @@
             #binding-cells = <2>;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42>;
             tapping-term-ms = <200>;
-            hold-trigger-on-release;
+            flavor = "tap-preferred";
         };
 
         hold_layer: hold_layer {
@@ -43,7 +42,7 @@
             bindings = <&sl>, <&sl>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
 
@@ -53,7 +52,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
     };
