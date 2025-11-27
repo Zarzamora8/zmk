@@ -72,10 +72,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE     &kp NUMBER_1         &kp W                &kp E             &kp R                             &kp T          &kp EQUAL        &kp MINUS        &kp Y      &kp U                                &kp I              &kp O                 &kp BACKSLASH           &kp DELETE
-&kp CAPSLOCK  &hml LEFT_CONTROL A  &hml LEFT_COMMAND S  &hml LEFT_ALT D   &hml LEFT_SHIFT F                 &kp G          &hold_layer 0 1  &hold_layer 0 2  &kp H      &hmr RIGHT_SHIFT J                   &hmr RIGHT_ALT K   &hmr RIGHT_COMMAND L  &hmr RIGHT_CONTROL P    &kp SQT
-&kp ESC       &kp Z                &kp X                &kp C             &kp V                             &kp B                                            &kp N      &kp M                                &kp COMMA          &kp DOT               &long_press COLON SEMI  &kp SLASH
-                                                        &kp LEFT_BRACKET  &long_press LEFT_PARENTHESIS TAB  &kp BACKSPACE                                    &kp SPACE  &long_press RIGHT_PARENTHESIS ENTER  &kp RIGHT_BRACKET
+&kp GRAVE     &long_press NUMBER_1 Q  &long_press NUMBER_2 W  &long_press NUMBER_3 E  &long_press NUMBER_4 R            &long_press N5 T  &kp EQUAL        &kp MINUS        &long_press NUMBER_6 Y  &long_press N7 U                     &long_press N8 I         &long_press N9 O      &long_press N0 BACKSLASH  &kp DELETE
+&kp CAPSLOCK  &hml LEFT_CONTROL A     &hml LEFT_COMMAND S     &hml LEFT_ALT D         &hml LEFT_SHIFT F                 &kp G             &hold_layer 0 1  &hold_layer 0 2  &kp H                   &hmr RIGHT_SHIFT J                   &hmr RIGHT_ALT K         &hmr RIGHT_COMMAND L  &hmr RIGHT_CONTROL P      &kp SQT
+&kp ESC       &kp Z                   &kp X                   &kp C                   &kp V                             &kp B                                               &kp N                   &long_press M KP_MINUS               &long_press UNDER COMMA  &kp DOT               &long_press SEMI COLON    &kp SLASH
+                                                              &kp LEFT_BRACKET        &long_press LEFT_PARENTHESIS TAB  &kp BACKSPACE                                       &kp SPACE               &long_press RIGHT_PARENTHESIS ENTER  &kp RIGHT_BRACKET
             >;
         };
 
