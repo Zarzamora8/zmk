@@ -72,10 +72,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE     &long_press NUMBER_1 Q  &long_press NUMBER_2 W  &long_press NUMBER_3 E  &long_press NUMBER_4 R            &long_press N5 T  &kp EQUAL        &kp MINUS        &long_press NUMBER_6 Y  &long_press N7 U                     &long_press N8 I         &long_press N9 O       &long_press N0 BACKSLASH  &kp DELETE
-&kp CAPSLOCK  &hml LEFT_CONTROL A     &hml LEFT_COMMAND S     &hml LEFT_ALT D         &hml LEFT_SHIFT F                 &kp G             &hold_layer 0 1  &hold_layer 0 2  &kp H                   &hmr RIGHT_SHIFT J                   &hmr RIGHT_ALT K         &hmr RIGHT_COMMAND L   &hmr RIGHT_CONTROL P      &kp SQT
-&kp ESC       &kp Z                   &kp X                   &kp C                   &kp V                             &kp B                                               &kp N                   &long_press KP_SUBTRACT M            &long_press UNDER COMMA  &long_press EQUAL DOT  &long_press SEMI COLON    &kp SLASH
-                                                              &kp LEFT_BRACKET        &long_press LEFT_PARENTHESIS TAB  &kp BACKSPACE                                       &kp SPACE               &long_press RIGHT_PARENTHESIS ENTER  &kp RIGHT_BRACKET
+&kp GRAVE     &long_press NUMBER_1 Q  &long_press NUMBER_2 W  &long_press NUMBER_3 E  &long_press NUMBER_4 R            &long_press N5 T   &kp LEFT_ARROW  &kp UP_ARROW  &long_press NUMBER_6 Y  &long_press N7 U                     &long_press N8 I         &long_press N9 O       &long_press N0 BACKSLASH  &kp DELETE
+&kp CAPSLOCK  &hml LEFT_CONTROL A     &hml LEFT_COMMAND S     &hml LEFT_ALT D         &hml LEFT_SHIFT F                 &long_press ESC G  &kp RIGHT       &kp DOWN      &long_press ESC H       &hmr RIGHT_SHIFT J                   &hmr RIGHT_ALT K         &hmr RIGHT_COMMAND L   &hmr RIGHT_CONTROL P      &kp SQT
+&tog 1        &kp Z                   &kp X                   &kp C                   &kp V                             &kp B                                            &kp N                   &long_press KP_SUBTRACT M            &long_press UNDER COMMA  &long_press EQUAL DOT  &long_press SEMI COLON    &kp SLASH
+                                                              &kp LEFT_BRACKET        &long_press LEFT_PARENTHESIS TAB  &kp BACKSPACE                                    &kp SPACE               &long_press RIGHT_PARENTHESIS ENTER  &kp RIGHT_BRACKET
             >;
         };
 
@@ -89,27 +89,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL        &kp RCTRL        &kp N6           &kp N7           &kp N8          &kp N9      &kp N0      &kp BSPC
-&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &hold_layer 0 1  &hold_layer 0 2  &kp LEFT         &kp DOWN         &kp UP          &kp RIGHT   &bl BL_DEC  &bl BL_INC
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                                    &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_ON  &bl BL_TOG  &bl BL_OFF  &trans
-                                          &kp LGUI      &trans        &kp SPACE                                         &kp LGUI         &trans           &kp SPACE
-            >;
-        };
-
-        raise_layer {
-            display-name = "SYMBOL";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
-
-            bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LCTRL        &kp RCTRL        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans     &hold_layer 0 1  &hold_layer 0 2  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans                                       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE                                    &kp RET    &trans     &kp RALT
+&kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &kp RCTRL  &kp N6           &kp N7           &kp N8          &kp N9      &kp N0      &kp BSPC
+&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans     &trans     &kp LEFT         &kp DOWN         &kp UP          &kp RIGHT   &bl BL_DEC  &bl BL_INC
+&tog 1     &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_ON  &bl BL_TOG  &bl BL_OFF  &trans
+                                          &kp LGUI      &trans        &kp SPACE                             &kp LGUI         &trans           &kp SPACE
             >;
         };
     };
